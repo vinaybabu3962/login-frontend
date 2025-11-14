@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private API_URL = environment.API_URL;
+  private API_URL = 'https://login-backend-tmjm.onrender.com';
 
   constructor(private http: HttpClient) {}
 

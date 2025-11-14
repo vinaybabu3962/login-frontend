@@ -1,0 +1,164 @@
+/* Center wrapper for both pages */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #eef3ff 0%,
+    #f7faff 50%,
+    #e8f0ff 100%
+  );
+  padding: 20px;
+}
+
+/* Card container */
+.auth-card {
+  width: 380px;
+  padding: 35px 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Titles */
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form input group */
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #5b8def;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background: #4b7bec;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #3a66d3;
+}
+
+.btn-secondary {
+  background: #e9ecef;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: #d6dade;
+}
+
+/* Message area */
+.message {
+  margin-top: 20px;
+  color: #c0392b;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE DESIGN
+   =============================== */
+@media (max-width: 480px) {
+
+  /* Smaller wrapper padding */
+  .auth-wrapper {
+    padding: 10px;
+  }
+
+  /* Card becomes narrower and tighter */
+  .auth-card {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  /* Title slightly smaller */
+  .title {
+    font-size: 22px;
+  }
+
+  /* Subtitle smaller */
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  /* Input fields full width */
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Reduce button padding for smaller screens */
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   TABLET RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+    padding: 30px 25px;
+  }
+}

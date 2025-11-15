@@ -1,4 +1,4 @@
-# Login Frontend (Angular 17)
+# Login Frontend
 
 A cresponsive login & signup interface built using **Angular 17 (Standalone Components)**.  
 This frontend connects with a Node.js + Express backend to perform authentication, rate-limited login attempts, and protected routing.
@@ -7,7 +7,7 @@ Deployed publicly using **Render Static Hosting**.
 
 ---
 
-## ✨ Features
+## Features
 
 - Login form (email + password)
 - Signup form (name, email, password)
@@ -20,7 +20,7 @@ Deployed publicly using **Render Static Hosting**.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Angular 17** (Standalone Components)
 - **TypeScript**
@@ -29,8 +29,8 @@ Deployed publicly using **Render Static Hosting**.
 
 ---
 
-## 📁 Folder Structure
-
+## Folder Structure
+```
 ├── src/
 │ ├── app/
 │ │ ├── components/
@@ -48,3 +48,4 @@ Deployed publicly using **Render Static Hosting**.
 ├── angular.json
 ├── package.json
 └── tsconfig.json
+```
